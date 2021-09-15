@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/CSS/core.css">
+  <link rel="stylesheet" href="/CSS/animation.css">
+  <link rel="stylesheet" href="/CSS/containers.css">
+  <link rel="stylesheet" href="/CSS/inputs.css">
+  <link rel="stylesheet" href="/CSS/tooltip.css">
+  <link rel="stylesheet" href="/CSS/results.css">
+  <link rel="stylesheet" href="/CSS/buttons.css">
+  <link rel="stylesheet" href="/CSS/text.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="template-outer-container">
+    <div class="bacc-calculator">
+      <div class="bacc-calculator__inner-container bacc-calculator__border">
+        <div class="bacc-calculator__heading mgb-20">
+          <h2 class="calc-heading text-upper mgb-10">Bambridge Accountants Calculator</h2>
+          <p class="calc-sub-heading">Use this template to create a Bambridge Accountants Calculator</p>
+        </div>
+        <div class="bacc-calculator__form pos-r">
+          <div class="two-input-row">
+            <div class="form-group">
+              <div class="label-container flex">
+                <label for="" class="calc-label">Input 1</label>
+                <div class="bacc-tooltip-container">
+                  <span class="bacc-tooltip-icon">£</span>
+                  <div class="bacc-tooltip-content ttc-sb bacc-tooltip-content__left">
+                    <span class="bacc-tooltip-close">x</span>
+                    <p class="bacc-tooltip-text">Tooltip Text </p>
+                  </div>
+                </div>
+              </div>
+              <div class="input-container" data-error="">
+                <div class="before-input-box">£</div>
+                <input type="number" class="bacc-calc-input previous-turnover" id="previous-turnover" value='18000' data-name="previous-turnover">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="label-container flex">
+                <label for="ac" class="calc-label">Input 2</label>
+                <div class="bacc-tooltip-container">
+                  <span class="bacc-tooltip-icon">?</span>
+                  <div class="bacc-tooltip-content ttc-ac bacc-tooltip-content__right">
+                    <span class="bacc-tooltip-close">x</span>
+                    <p class="bacc-tooltip-text">Tooltip text</span> </p>
+                  </div>
+                </div>
+              </div> 
+              <div class="input-container" data-error="">
+                <div class="before-input-box">$</div>
+                <input type="number" class="bacc-calc-input affected-turnover" data-name="affected-turnover" id="affected-turnover" value='10000'>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bacc-results-container">
+          <div class="bacc-results-container__summary"></div>
+          <div class="tcalc-warning">
+            <p class="warning-content"><span class="fw-bold">Important!</span> This is only a reference point. CUSTOM WARNING FOR YOUR CALCULATOR</a>.</p>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  <script src="/src/seiss-state.js"></script>
+  <script src="/src/seiss-calculations.js"></script>
+  <script src="/src/seiss-ui.js"></script>
+  <script src="/src/seiss-app.js"></script>
+</body>
+</html>
