@@ -50,6 +50,11 @@ cd ..
 echo 'Writing to the README FILE'
 cp ~/shs/create-bacc-calculator/files/README.md README.md
 
+echo 'initializing git'
+git init
+
 echo 'File Creation Finished'
 echo "Opening Calculator: $CALC_NAME"
+code .
+
 echo 'Thank you for using Bambridge Accountants Calculator Template'
