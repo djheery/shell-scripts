@@ -6,4 +6,4 @@ echo 'Making Workspace'
 cd ~/Bambridge-Accountants 
 mkdir $WORKSPACE
 echo "Entering into $WORKSPACE"
-cd $WORKSPACE && git init && code .
+cd $WORKSPACE && git init && codium .
