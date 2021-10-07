@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-cd ~/Desktop/Bambridge-Accountants/Bambridge-Accountants-Templates
+cd ~/Bambridge-Accountants/
 
 # Name Calculator & Make Directory
 
